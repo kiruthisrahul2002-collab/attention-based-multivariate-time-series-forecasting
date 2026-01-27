@@ -1,0 +1,31 @@
+Attention-Based Multivariate Time Series Forecasting Using Deep Learning
+
+Objective
+
+The objective of this project is to design and evaluate an attention-based deep learning model for multivariate time series forecasting and compare its performance against a standard LSTM baseline.
+
+Dataset
+
+A synthetic multivariate time series with more than 3000 observations and 5 features was generated using NumPy. The dataset includes trend, multiple seasonal patterns, non-linear interactions, and noise to simulate real-world temporal behavior.
+
+Methodology
+
+Two models were implemented:
+
+LSTM as a baseline sequence model.
+
+Transformer Encoder with self-attention to capture long-range temporal dependencies.
+
+Walk-forward validation was applied to avoid data leakage. Performance was evaluated using MAE, RMSE, and MASE metrics.
+
+Results
+
+The Transformer model consistently achieved lower MAE, RMSE, and MASE values compared to the LSTM, indicating better forecasting accuracy.
+
+Attention Analysis
+
+Attention weights were visualized using heatmaps. The model focused more on recent time steps while also attending to periodic patterns, showing that the attention mechanism learned meaningful temporal dependencies.
+
+Conclusion
+
+The results demonstrate that attention-based models outperform traditional recurrent architectures for complex multivariate time series forecasting and provide improved interpretability through attention visualization
